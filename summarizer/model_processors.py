@@ -202,7 +202,7 @@ class ModelProcessor(object):
         if sentences:
             sentences = self.__run_clusters(sentences, ratio, algorithm, use_first, num_sentences)
 
-        return ' '.join(sentences)
+        return '\n'.join(sentences)
 
     def __call__(
         self,
